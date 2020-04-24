@@ -62,8 +62,20 @@ pokemon = [
 
 
 # How would you get the url for Bulbasaur's ability?
+
+# Iterate into the hash at index 0 in the array. 
+# Iterate down the array stored at the "abilities" array and iterate through the abilty hash to get the URL key.
+
+
 # How would you return the first pokemon with base experience over 40?
+#You can use the .find enumerator to find the base_experience key that is linked to a value > 40. 
+
 # How would you return ALL OF THE pokemon with base experience over 40? (Gotta catch em all)
+#You can use the .collect enumerator to grab all of the base_experience keys linked to a > 40 value.
+
 # How would you return an array of all of the pokemon's names?
+# By using the .map enumerator to return a new array with just the names.
+
 # How would you determine whether or not the pokemon array contained any pokemon with a weight greater than 60?
 #  whatever method you use should return true if there are any such pokemon, false if not.
+#You could use the .any? enumerator. It will return true as soon as it finds the first value matching. 

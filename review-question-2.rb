@@ -1,7 +1,31 @@
 # Finish the implementation of the Car class so it has the functionality described below
 
 class Car
+attr_accessor :make, :model
+@@all = []
+def initialize(make, model)
+    @make = make
+    @model = model
+    @@all << self
+end
 
+#BONUS QUESTION: Initalize without arguments and name the 
+# key in your parameter with the desired value e.g. car = Car.new(make:"Toyota", model:"Camry")
+
+#def initialize
+# @make = make
+# @model = model
+# @@all << self
+# end
+
+
+def self.all
+    @@all
+end
+
+def drive
+    "VROOOOOOOOOOOOM!"
+end
 
 
 end
@@ -29,3 +53,4 @@ volvo_lightning.make
 #=> "Volvo"
 volvo_lightning.model
 #=> "Lightning"
+
